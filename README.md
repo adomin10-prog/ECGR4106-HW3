@@ -23,7 +23,26 @@ https://github.com/adomin10-prog/ECGR4106-HW3
 ## Requirements
 
 ```bash
-!pip -q install torch numpy pandas matplotlib tqdm nltk scikit-learn
+!pip -q install torch numpy pandas matplotlib tqdm nltk scikit-learn requests
+
+from pathlib import Path
+import requests
+
+DATASET_URL = "https://raw.githubusercontent.com/adomin10-prog/ECGR4106-HW3/main/vast_english_french.txt"
+DATASET_NAME = "vast_english_french.txt"
+
+DATASET_PATH = Path("/content") / DATASET_NAME
+
+response = requests.get(DATASET_URL, timeout=30)
+response.raise_for_status()
+
+DATASET_PATH.write_bytes(response.content)
+
+if DATASET_PATH.stat().st_size == 0:
+    raise RuntimeError("Dataset downloaded but the file is empty.")
+
+print("Dataset ready:", DATASET_PATH)
+print("File size:", DATASET_PATH.stat().st_size, "bytes")
 ```
 
 ## Imports and Configuration
