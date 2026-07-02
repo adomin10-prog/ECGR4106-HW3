@@ -1,4 +1,24 @@
-# ECGR 4106 Homework 3
+# ECGR 4106 Homework 3: Sequence-to-Sequence Machine Translation
+
+Below is the executed notebook organized as follows:
+
+1. Requirements
+2. Dataset download and setup
+3. Helper functions
+4. Plot functions
+5. Problem 1 - Baseline sequence-to-sequence RNN model
+6. Problem 1 plots and results
+7. Problem 2 - Sequence-to-sequence model with attention
+8. Problem 2 plots and results
+9. Problem 3 - Custom sentence testing
+10. Problem 3 results and model comparison
+11. Final analysis and conclusion
+
+Link to executed notebook file via Colab:  
+https://colab.research.google.com/github/adomin10-prog/ECGR4106-HW3/blob/main/ECGR_4106_HW3.ipynb
+
+Link to GitHub repository:  
+https://github.com/adomin10-prog/ECGR4106-HW3
 
 ## Requirements
 
