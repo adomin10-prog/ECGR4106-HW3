@@ -12,7 +12,7 @@ Below is the executed notebook organized as follows:
 8. Problem 2 plots and results
 9. Problem 3 - Custom sentence testing
 10. Problem 3 results and model comparison
-11. Final analysis and conclusion
+
 
 Link to executed notebook file via Colab:  
 https://colab.research.google.com/github/adomin10-prog/ECGR4106-HW3/blob/main/ECGR_4106_HW3.ipynb
